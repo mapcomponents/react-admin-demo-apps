@@ -15,6 +15,7 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
+import raGeospatialProps from "./raGeospatialProps";
 
 export const RouteList = () => (
   <List>
@@ -32,7 +33,7 @@ export const RouteEdit = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" type="line" />
+      <RaGeospatialInput {...raGeospatialProps} type="line" />
     </SimpleForm>
   </Edit>
 );
@@ -41,7 +42,7 @@ export const RouteCreate = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" type="line" />
+      <RaGeospatialInput {...raGeospatialProps} type="line" />
     </SimpleForm>
   </Create>
 );
@@ -50,7 +51,7 @@ export const RouteShow = () => (
   <Show>
     <SimpleShowLayout>
       <TextField source="title" />
-      <RaGeospatialShow source="geom" />
+      <RaGeospatialShow {...raGeospatialProps} />
       <TextField source="id" />
     </SimpleShowLayout>
   </Show>

@@ -15,13 +15,14 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
-import GisEditToolbar from "./GisEditToolbar";
+import raGeospatialProps from "./raGeospatialProps";
 
 export const RouteList = () => (
   <List>
     <Datagrid rowClick="edit">
       <TextField source="id" />
       <TextField source="title" />
+      <EditButton />
       <ShowButton />
     </Datagrid>
   </List>
@@ -29,19 +30,19 @@ export const RouteList = () => (
 
 export const RouteEdit = () => (
   <Edit>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" type="line" />
+      <RaGeospatialInput {...raGeospatialProps} type="line" />
     </SimpleForm>
   </Edit>
 );
 export const RouteCreate = () => (
   <Create>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" type="line" />
+      <RaGeospatialInput {...raGeospatialProps} type="line" />
     </SimpleForm>
   </Create>
 );
@@ -50,7 +51,7 @@ export const RouteShow = () => (
   <Show>
     <SimpleShowLayout>
       <TextField source="title" />
-      <RaGeospatialShow embeddedMap={false} source="geom" />
+      <RaGeospatialShow {...raGeospatialProps} />
       <TextField source="id" />
     </SimpleShowLayout>
   </Show>

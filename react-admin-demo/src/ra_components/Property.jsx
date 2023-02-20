@@ -15,6 +15,7 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
+import raGeospatialProps from "./raGeospatialProps";
 
 
 export const PropertyList = () => (
@@ -32,7 +33,7 @@ export const PropertyEdit = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" type="polygon" />
+      <RaGeospatialInput {...raGeospatialProps} type="polygon" />
     </SimpleForm>
   </Edit>
 );
@@ -41,7 +42,7 @@ export const PropertyCreate = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" type="polygon" />
+      <RaGeospatialInput {...raGeospatialProps} type="polygon" />
     </SimpleForm>
   </Create>
 );
@@ -51,7 +52,7 @@ export const PropertyShow = () => (
     <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="title" />
-      <RaGeospatialShow source="geom" />
+      <RaGeospatialShow  {...raGeospatialProps} />
     </SimpleShowLayout>
   </Show>
 );

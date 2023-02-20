@@ -17,7 +17,6 @@ const Root = styled("div")(({ theme }) => ({
   flexDirection: "column",
   zIndex: 1,
   minHeight: "100vh",
-  backgroundColor: theme.palette.background.default,
   position: "relative",
   backgroundColor: "none",
   pointerEvents: "none",

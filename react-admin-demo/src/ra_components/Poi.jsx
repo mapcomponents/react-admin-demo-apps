@@ -15,6 +15,7 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
+import raGeospatialProps from "./raGeospatialProps";
 
 
 export const PoiList = () => (
@@ -32,7 +33,7 @@ export const PoiEdit = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" />
+      <RaGeospatialInput {...raGeospatialProps} />
     </SimpleForm>
   </Edit>
 );
@@ -41,7 +42,7 @@ export const PoiCreate = () => (
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput source="geom" />
+      <RaGeospatialInput {...raGeospatialProps} />
     </SimpleForm>
   </Create>
 );
@@ -51,7 +52,7 @@ export const PoiShow = () => (
     <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="title" />
-      <RaGeospatialShow source="geom" />
+      <RaGeospatialShow {...raGeospatialProps} />
     </SimpleShowLayout>
   </Show>
 );

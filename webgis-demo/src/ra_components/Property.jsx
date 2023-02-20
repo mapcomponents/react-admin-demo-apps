@@ -15,7 +15,7 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
-import GisEditToolbar from "./GisEditToolbar";
+import raGeospatialProps from "./raGeospatialProps";
 
 
 export const PropertyList = () => (
@@ -23,25 +23,26 @@ export const PropertyList = () => (
     <Datagrid rowClick="edit">
       <TextField source="id" />
       <TextField source="title" />
+      <EditButton />
       <ShowButton />
     </Datagrid>
   </List>
 );
 export const PropertyEdit = () => (
   <Edit>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" type="polygon" />
+      <RaGeospatialInput {...raGeospatialProps} type="polygon" />
     </SimpleForm>
   </Edit>
 );
 export const PropertyCreate = () => (
   <Create>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" type="polygon" />
+      <RaGeospatialInput {...raGeospatialProps} type="polygon" />
     </SimpleForm>
   </Create>
 );
@@ -51,7 +52,7 @@ export const PropertyShow = () => (
     <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="title" />
-      <RaGeospatialShow embeddedMap={false} source="geom" />
+      <RaGeospatialShow  {...raGeospatialProps} />
     </SimpleShowLayout>
   </Show>
 );

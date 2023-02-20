@@ -1,6 +1,5 @@
 import {
   Create,
-  CreateButton,
   Edit,
   SimpleForm,
   TextInput,
@@ -16,32 +15,34 @@ import {
   RaGeospatialInput,
   RaGeospatialShow,
 } from "@mapcomponents/ra-geospatial";
-import GisEditToolbar from "./GisEditToolbar";
+import raGeospatialProps from "./raGeospatialProps";
+
 
 export const PoiList = () => (
-  <List actions={<CreateButton />}>
+  <List>
     <Datagrid rowClick="edit">
       <TextField source="id" />
       <TextField source="title" />
+      <EditButton />
       <ShowButton />
     </Datagrid>
   </List>
 );
 export const PoiEdit = () => (
   <Edit>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" />
+      <RaGeospatialInput {...raGeospatialProps} />
     </SimpleForm>
   </Edit>
 );
 export const PoiCreate = () => (
   <Create>
-    <SimpleForm toolbar={<GisEditToolbar />}>
+    <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />
-      <RaGeospatialInput embeddedMap={false} source="geom" />
+      <RaGeospatialInput {...raGeospatialProps} />
     </SimpleForm>
   </Create>
 );
@@ -51,7 +52,7 @@ export const PoiShow = () => (
     <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="title" />
-      <RaGeospatialShow embeddedMap={false} source="geom" />
+      <RaGeospatialShow {...raGeospatialProps} />
     </SimpleShowLayout>
   </Show>
 );
