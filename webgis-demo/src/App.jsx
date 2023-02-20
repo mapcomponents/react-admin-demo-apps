@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Admin, Resource } from "react-admin";
-import localStorageDataProvider from "ra-data-local-storage";
+import localStorageDataProvider from "./ra_components/lsDataProvider";
 import { PoiEdit, PoiCreate, PoiShow, PoiList } from "./ra_components/Poi";
 import {
   PropertyCreate,
