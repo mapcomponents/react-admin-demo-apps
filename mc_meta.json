@@ -1,0 +1,40 @@
+{
+   "RaGeospatialInput": {
+      "name": "RaGeospatialInput",
+      "title": "Geospatial Input",
+      "description": "Input for Geospatial component",
+      "i18n": {
+         "de": { "title": "Raumbezogene Dateneingabe", "description": "" }
+      },
+      "tags": [],
+      "category": "",
+      "type": "application",
+      "components": [],
+      "thumbnail": "",
+      "demos": [
+         {
+            "name": "dashboard",
+            "url": ""
+         }
+      ]
+   },
+   "RaGeospatialShow": {
+      "name": "RaGeospatialShow",
+      "title": "Geospatial View",
+      "description": "Shows Geospatial component",
+      "i18n": {
+         "de": { "title": "Darstellung", "description": "" }
+      },
+      "tags": [],
+      "category": "",
+      "type": "application",
+      "components": [],
+      "thumbnail": "",
+      "demos": [
+         {
+            "name": "dashboard",
+            "url": ""
+         }
+      ]
+   }
+}
