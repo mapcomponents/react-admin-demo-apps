@@ -1,16 +1,19 @@
 {
-   "RaGeospatialInput": {
-      "name": "RaGeospatialInput",
-      "title": "Geospatial Input",
-      "description": "Input for Geospatial component",
+   "ReactAdminDemo": {
+      "name": "ReactAdminDemo",
+      "title": "React Admin Demo",
+      "description": "Creates Pois, Properties or Routes",
       "i18n": {
-         "de": { "title": "Raumbezogene Dateneingabe", "description": "" }
+         "de": {
+            "title": "Punkt-, Polygon- oder Routeneingabe",
+            "description": ""
+         }
       },
       "tags": [],
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/GeoSpatialInput.png",
+      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/ReactAdminDemoPic.png",
       "demos": [
          {
             "name": "dashboard",
@@ -18,18 +21,21 @@
          }
       ]
    },
-   "RaGeospatialShow": {
-      "name": "RaGeospatialShow",
-      "title": "Geospatial View",
-      "description": "Shows Geospatial Component",
+   "WebGisDemo": {
+      "name": "WebGisDemo",
+      "title": "WebGisDemo",
+      "description": "Creates Pois, Properties or Routes",
       "i18n": {
-         "de": { "title": "Darstellung", "description": "" }
+         "de": {
+            "title": "Punkt-, Polygon- oder Routeneingabe",
+            "description": ""
+         }
       },
       "tags": [],
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/GeoSpatialView.png",
+      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/WebGisDemoPic.png",
       "demos": [
          {
             "name": "dashboard",
