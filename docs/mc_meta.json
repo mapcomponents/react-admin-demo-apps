@@ -10,18 +10,18 @@
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "",
+      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/GeoSpatialInput.png",
       "demos": [
          {
             "name": "dashboard",
-            "url": ""
+            "url": "https://mapcomponents.github.io/react-admin-demo-apps/react-admin-demo"
          }
       ]
    },
    "RaGeospatialShow": {
       "name": "RaGeospatialShow",
       "title": "Geospatial View",
-      "description": "Shows Geospatial component",
+      "description": "Shows Geospatial Component",
       "i18n": {
          "de": { "title": "Darstellung", "description": "" }
       },
@@ -29,11 +29,11 @@
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "",
+      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/GeoSpatialView.png",
       "demos": [
          {
             "name": "dashboard",
-            "url": ""
+            "url": "https://mapcomponents.github.io/react-admin-demo-apps/webgis-demo"
          }
       ]
    }
