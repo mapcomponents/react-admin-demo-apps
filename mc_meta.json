@@ -13,7 +13,7 @@
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/ReactAdminDemoPic.png",
+      "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/ReactAdminDemoPic.png",
       "demos": [
          {
             "name": "dashboard",
@@ -35,7 +35,7 @@
       "category": "",
       "type": "application",
       "components": [],
-      "thumbnail": "https://github.com/mapcomponents/react-admin-demo-apps/blob/main/assets/thumbnails/WebGisDemoPic.png",
+      "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/WebGisDemoPic.png",
       "demos": [
          {
             "name": "dashboard",
