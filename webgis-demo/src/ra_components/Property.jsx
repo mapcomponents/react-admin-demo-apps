@@ -23,13 +23,12 @@ export const PropertyList = () => (
     <Datagrid rowClick="edit">
       <TextField source="id" />
       <TextField source="title" />
-      <EditButton />
       <ShowButton />
     </Datagrid>
   </List>
 );
 export const PropertyEdit = () => (
-  <Edit>
+  <Edit mutationMode='optimistic'>
     <SimpleForm>
       <TextInput source="title" />
       <TextInput source="geom" />

@@ -22,7 +22,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import DataLayers from "./components/DataLayers";
 
 const dataProvider = localStorageDataProvider({
-  localStorageUpdateDelay:2,
+  localStorageUpdateDelay: 2,
   defaultData: {
     pois: [{ id: 0, title: "poi", geom: "" }],
     properties: [{ id: 0, title: "property", geom: "" }],
@@ -33,7 +33,7 @@ const dataProvider = localStorageDataProvider({
 function App() {
   return (
     <>
-      <Admin  dataProvider={dataProvider} layout={GisLayout}>
+      <Admin dataProvider={dataProvider} layout={GisLayout}>
         <Resource
           name="pois"
           list={PoiList}
@@ -57,7 +57,7 @@ function App() {
         />
       </Admin>
       <MapLibreMap
-      mapId='map_1'
+        mapId="map_1"
         options={{
           zoom: 14.5,
           style:
