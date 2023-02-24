@@ -1,7 +1,7 @@
 {
   "ReactAdminDemo": {
     "name": "ReactAdminDemo",
-    "title": "React Admin Demo",
+    "title": "React Admin",
     "description": "Creates Pois, Properties or Routes",
     "i18n": {
       "de": {
@@ -24,7 +24,7 @@
   },
   "WebGisDemo": {
     "name": "WebGisDemo",
-    "title": "WebGisDemo",
+    "title": "React Admin WebGIS",
     "description": "Creates Pois, Properties or Routes",
     "i18n": {
       "de": {
