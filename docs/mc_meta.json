@@ -1,46 +1,48 @@
 {
-   "ReactAdminDemo": {
-      "name": "ReactAdminDemo",
-      "title": "React Admin Demo",
-      "description": "Creates Pois, Properties or Routes",
-      "i18n": {
-         "de": {
-            "title": "Punkt-, Polygon- oder Routeneingabe",
-            "description": ""
-         }
-      },
-      "tags": [],
-      "category": "",
-      "type": "application",
-      "components": [],
-      "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/ReactAdminDemoPic.png",
-      "demos": [
-         {
-            "name": "dashboard",
-            "url": "https://mapcomponents.github.io/react-admin-demo-apps/react-admin-demo"
-         }
-      ]
-   },
-   "WebGisDemo": {
-      "name": "WebGisDemo",
-      "title": "WebGisDemo",
-      "description": "Creates Pois, Properties or Routes",
-      "i18n": {
-         "de": {
-            "title": "Punkt-, Polygon- oder Routeneingabe",
-            "description": ""
-         }
-      },
-      "tags": [],
-      "category": "",
-      "type": "application",
-      "components": [],
-      "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/WebGisDemoPic.png",
-      "demos": [
-         {
-            "name": "dashboard",
-            "url": "https://mapcomponents.github.io/react-admin-demo-apps/webgis-demo"
-         }
-      ]
-   }
+  "ReactAdminDemo": {
+    "name": "ReactAdminDemo",
+    "title": "React Admin Demo",
+    "description": "Creates Pois, Properties or Routes",
+    "i18n": {
+      "de": {
+        "title": "Punkt-, Polygon- oder Routeneingabe",
+        "description": ""
+      }
+    },
+    "tags": [],
+    "category": "",
+    "type": "application",
+    "components": [],
+    "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/ReactAdminDemoPic.png",
+    "demos": [
+      {
+        "name": "dashboard",
+        "url": "https://mapcomponents.github.io/react-admin-demo-apps/react-admin-demo",
+        "closeButtonPosition": "top_right"
+      }
+    ]
+  },
+  "WebGisDemo": {
+    "name": "WebGisDemo",
+    "title": "WebGisDemo",
+    "description": "Creates Pois, Properties or Routes",
+    "i18n": {
+      "de": {
+        "title": "Punkt-, Polygon- oder Routeneingabe",
+        "description": ""
+      }
+    },
+    "tags": [],
+    "category": "",
+    "type": "application",
+    "components": [],
+    "thumbnail": "https://mapcomponents.github.io/react-admin-demo-apps/assets/thumbnails/WebGisDemoPic.png",
+    "demos": [
+      {
+        "name": "dashboard",
+        "url": "https://mapcomponents.github.io/react-admin-demo-apps/webgis-demo",
+        "closeButtonPosition": "top_right"
+      }
+    ]
+  }
 }
